@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav">
+        <a  class="active" href="index.html">home</a>
+        <a href="about us .html">about_us</a>
+        <a href="&">gallery</a>
+        <a href="$">contact_us</a>
+    </div>
+</body>
+<h1>Anime</h1>
+<p> Anime was created in Japan, with the earliest documented animation experiments dating back to around 1907 in cities like Kyoto and Tokyo. The medium as we know it today was pioneered by Japanese artists in the 1910s and further revolutionized in the 1960s by creators like Osamu Tezuka. </p>
+
+<section>
+    <img class ="mySlides" src="20240103_haikyuufilm_1.webp" alt="slide 1">
+    <img class ="mySlides" src="download.jfif" alt="slide 2">
+    <img class ="mySlides" src="download (1).jfif" alt="slide 3">
+    <img class ="mySlides" src="download (2).jfif" alt="slide 3">
+    <img class ="mySlides" src="download (3).jfif" alt="slide 3">
+    <img class ="mySlides" src="download.jfif" alt="slide 3"> 
+    <img class ="mySlides" src="images (1).jfif" alt="slide 3"> 
+    <img class ="mySlides" src="images (2).jfif" alt="slide 3"> 
+    <img class ="mySlides" src="images.jfif" alt="slide 3"> 
+    <img class ="mySlides" src="acastro_190807_3592_best_anime_2019_0001__1_.webp" alt="slide 3"> 
+</section>
+<script>
+let myIndex = 0;
+window.onload = function () {
+carousel();
+};
+function carousel() {
+let slides = document.getElementsByClassName("mySlides");
+// hide all slides
+for (let i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+myIndex++;
+if (myIndex > slides.length) {
+myIndex = 1;
+}
+slides[myIndex - 1].style.display = "block";
+setTimeout(carousel, 3000); // change every 3 seconds
+}
+</script>
+</html>
+
+
+
+
+
+
+
+
+<h3>Use this site for any needs</h3>
+<a href="https://www.google.com/">Visit Google!</a>
+<table border="5">
